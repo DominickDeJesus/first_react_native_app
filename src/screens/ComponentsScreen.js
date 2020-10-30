@@ -16,4 +16,4 @@ const styles = StyleSheet.create({
   },
   subHeaderStyle: { fontSize: 20 },
 });
-export default ComponentsScr;
+export default ComponentsScreen;
