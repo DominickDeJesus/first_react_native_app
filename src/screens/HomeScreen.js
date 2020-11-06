@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Text, View, StyleSheet, Button } from "react-native";
 import { SearchBar } from "react-native-elements";
+import LinearGradient from "react-native-linear-gradient";
 
 const HomeScreen = ({ navigation }) => {
   const [search, setSearch] = useState("");
@@ -10,15 +11,17 @@ const HomeScreen = ({ navigation }) => {
   };
 
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        padding: 0,
-        marginBottom: 60,
-      }}
-    >
-      <Text style={{ fontSize: 45, textAlign: "center" }}>TrueStan</Text>
+    <View style={styles.pageStyle}>
+      <Text
+        style={{
+          textTransform: "uppercase",
+          fontSize: 55,
+          textAlign: "center",
+          color: "#fffaff",
+        }}
+      >
+        TrueStan
+      </Text>
       <SearchBar
         placeholder="Search an Artist"
         onChangeText={updateSearch}
@@ -61,6 +64,20 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     borderRadius: 50,
     borderColor: "white",
+  },
+  pageStyle: {
+    flex: 1,
+    justifyContent: "center",
+    padding: 0,
+    marginBottom: 60,
+    backgroundColor: "#24243e",
+    height: "100%",
+  },
+  linearGradient: {
+    flex: 1,
+    paddingLeft: 15,
+    paddingRight: 15,
+    borderRadius: 5,
   },
 });
 
