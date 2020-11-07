@@ -52,6 +52,7 @@ const styles = StyleSheet.create({
     borderColor: "white",
   },
   containerStyle: {
+    width: "90%",
     backgroundColor: "white",
     padding: 0,
     margin: 7,
@@ -68,8 +69,9 @@ const styles = StyleSheet.create({
   pageStyle: {
     flex: 1,
     justifyContent: "center",
+    alignItems: "center",
     padding: 0,
-    marginBottom: 60,
+    marginTop: -50,
     backgroundColor: "#24243e",
     height: "100%",
   },
