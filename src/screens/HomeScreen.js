@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Text, View, StyleSheet, Button } from "react-native";
+import { Text, View, StyleSheet, Button, Alert } from "react-native";
 import { SearchBar } from "react-native-elements";
 import LinearGradient from "react-native-linear-gradient";
 
@@ -29,15 +29,7 @@ const HomeScreen = ({ navigation }) => {
         inputStyle={styles.inputStyle}
         containerStyle={styles.containerStyle}
         inputContainerStyle={styles.inputContainerStyle}
-      />
-
-      <Button
-        onPress={() => {
-          navigation.navigate("List");
-        }}
-        title="Hello"
-        color="#841584"
-        accessibilityLabel="Learn more about this purple button"
+        onIconPress={() => Alert("boom")}
       />
     </View>
   );

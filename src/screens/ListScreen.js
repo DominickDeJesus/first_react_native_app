@@ -1,23 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Text, View, StyleSheet, FlatList } from "react-native";
+import { AppContext } from "../../context/AppContext";
 
 const ListScreen = () => {
-  const friends = [
-    { name: "friend5" },
-    { name: "friend4" },
-    { name: "friend3" },
-    { name: "friend2" },
-    { name: "friend1" },
-  ];
-  return (
-    <FlatList
-      keyExtractor={() => friends.name}
-      data={friends}
-      renderItem={({ item }) => {
-        return <Text>{item.name}</Text>;
-      }}
-    ></FlatList>
-  );
+  const { search, setSearch } = useContext(AppContext);
+  return <Text>{search}</Text>;
 };
 
 export default ListScreen;
