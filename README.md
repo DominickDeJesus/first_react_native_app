@@ -1,6 +1,6 @@
 # first_react_native_app
 
-## getting started
+## Getting Started
 
 - Clone this repo and cd into it
 - Run `yarn` in project directory 
